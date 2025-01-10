@@ -27,3 +27,8 @@ print("***")
 res = persone_coll.update_one({"nome":"Stefano"}, {"$set": {"eta":32}})
 p = persone_coll.find_one({"nome":"Stefano"})
 print(p)
+
+print("***")
+# cerca una persona che abbia il nome maggiore alfabeticamente di Gabriele
+persona = persone_coll.find_one({"nome":{"$gt":"Gabriele"}})
+print(persona)

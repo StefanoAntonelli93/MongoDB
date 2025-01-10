@@ -28,7 +28,7 @@ print(f"Documento p1 inserito con id: {result_p1.inserted_id}")
 
 # creo documento
 p2= {"nome":"Gabriele", "cognome":"Antonelli","eta":25,
-"computer":["asus","apple","acer"]}
+"computer":["apple"]}
 
 # Inserisco documento nel database
 result_p2 = persone_coll.insert_one(p2)
